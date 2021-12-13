@@ -1,0 +1,143 @@
+@font-face{
+    font-family:"Bariol";
+    src:url("bariolbold.ttf");
+}
+@font-face{
+    font-family:"Bariolthin";
+    src:url("bariolthin1.ttf");
+}
+@font-face{
+    font-family:"cooperm";
+    src:url("cooperm.ttf");
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(#ffffff,#B34EF6); /*degradé couleur*/
+    min-height: 100vh; /*hauteur minimal*/
+    
+}
+
+/* HEADER */
+
+h1{
+    float: left;
+    margin-left: 10px;
+    font-family: bariol;
+    clear: both;
+   
+}
+h1 a{
+     text-decoration: none;
+}
+h1 a:visited{
+    color: black;
+}
+h1 a:hover{
+    color: plum;
+}
+nav{
+    float: right;
+    margin-top: 10px;
+    
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+    font-family: bariolthin;
+}
+nav ul li a{
+   text-decoration: none;
+}
+nav ul li a:visited{
+   color: black;
+}
+nav ul li a:hover{
+   color: plum;
+}
+
+/*DIV*/
+
+.about{
+    clear: both;
+    padding-top: 100px;
+    text-align: center;
+    font-family: cooperm;
+    padding: 20px;
+}
+
+/*SVG*/
+
+svg{
+    width: 50%;
+    height: 50%;
+}
+
+.svg{
+    margin-left: 20px;
+}
+#coeur{
+    animation-name: coeur;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes coeur{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#firework{
+    animation-name: firework;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes firework{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
